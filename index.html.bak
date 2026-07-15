@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Sarath K's Portfolio</title>
+    <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Sarath K</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sarath K</span><br> Mobile
+                    Application Developer</h1>
+
+                <a href="assets/biodata/resume.pdf" class="button">Download Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/sarath-saseendran-ba6655b4/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a> -->
+                <a href="https://github.com/sarathksaseendran" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/perfil.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Sarath K</h2>
+                    <p class="about__text">I have did it all!
+                        Currently working as a Mobile Application Developer at bpract.com,
+                        building apps in Native iOS, Android and Hybrid apps in React Native.
+                        I am also good at HTML, Javascript, PHP(CodeIngiter) and DB systems like MSSQL, MySQL, PLSQL &
+                        MongoDB.
+                        I have also worked briefly in Java GUI, VB 6.0, .Net and Node.js.
+                        Ever since i started my journey in 2010 i had a lot of time in my hand to try it all.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">These are the skill i believe i have and there is still more to come.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-mobile skills__icon'></i>
+                            <span class="skills__name">iOS</span>
+                        </div>
+                        <div class="skills__bar skills__ios">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-mobile-alt skills__icon'></i>
+                            <span class="skills__name">Android</span>
+                        </div>
+                        <div class="skills__bar skills__android">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-react skills__icon'></i>
+                            <span class="skills__name">React Native</span>
+                        </div>
+                        <div class="skills__bar skills__react">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-php skills__icon'></i>
+                            <span class="skills__name">PHP</span>
+                        </div>
+                        <div class="skills__bar skills_php">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-data skills__icon'></i>
+                            <span class="skills__name">MSSQL, MySQL</span>
+                        </div>
+                        <div class="skills__bar skills__mssql">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-data skills__icon'></i>
+                            <span class="skills__name">MongoDB</span>
+                        </div>
+                        <div class="skills__bar skills__mongodb">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work11.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">My Works</h2>
+
+            <div class="work__container bd-grid">
+                <!-- <div class="work__img">
+                    <a href="https://apps.apple.com/sa/app/dyanate/id1249820630" target="_blank"><img src="assets/img/work1.png" alt=""></a>
+                </div> -->
+                <!-- <div class="work__img">
+                    <a href="https://apps.apple.com/sa/app/swaptime-%D8%B3%D9%88%D8%A7%D8%A8-%D8%AA%D8%A7%D9%8A%D9%85/id1465450211" target="_blank"><img src="assets/img/work2.png" alt=""></a>
+                </div> -->
+                <div class="work__img">
+                    <a href="https://play.google.com/store/apps/details?id=com.ajooweb&hl=en_US&gl=US" target="_blank"><img src="assets/img/work3.png" alt=""></a>
+                </div>
+                <div class="work__img">
+                    <a href="https://play.google.com/store/apps/details?id=com.app.royalreturns" target="_blank"><img src="assets/img/work5.png" alt=""></a>
+                </div>
+                <!-- <div class="work__img">
+                    <a href="https://play.google.com/store/apps/details?id=com.fast_prog.dyanate" target="_blank"><img src="assets/img/work6.png" alt=""></a>
+                </div> -->
+                <div class="work__img">
+                    <a href="https://play.google.com/store/apps/details?id=com.alphacademyv2" target="_blank"><img src="assets/img/work8.png" alt=""></a>
+                </div>
+                <div class="work__img">
+                    <a href="https://play.google.com/store/apps/details?id=com.orbitinstitute" target="_blank"><img src="assets/img/work9.png" alt=""></a>
+                </div>
+                <div class="work__img">
+                    <a href="https://orbitinstituteofscience.in/admin/" target="_blank"><img src="assets/img/work10.png" alt=""></a>
+                </div>
+                <div class="work__img">
+                    <a href="https://apps.apple.com/lk/app/royal-returns/id1578823857#?platform=iphone" target="_blank"><img src="assets/img/work12.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="https://formspree.io/f/xyyogrdn" method="POST" class="contact__form">
+                    <input type="text" placeholder="Name" name="name" class="contact__input">
+                    <input type="mail" placeholder="Email" name="__replyto" class="contact__input">
+                    <textarea name="" id="" cols="0" name="message" rows="10" class="contact__input"></textarea>
+                    <input type="submit" value="Submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Sarath K</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/sarathk.saseendran" class="footer__icon"><i
+                    class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/sarathksaseendran/" class="footer__icon"><i
+                    class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com/S_arath_K" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
