@@ -93,8 +93,8 @@ h1, h2, h3 {
 .logo-icon {
   width: 24px;
   height: 24px;
-  background-color: var(--accent-neon);
   border-radius: 4px;
+  object-fit: cover;
 }
 
 .nav__list {
