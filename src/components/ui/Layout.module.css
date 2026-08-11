@@ -1,0 +1,144 @@
+.uiLayer {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 50;
+  pointer-events: auto;
+}
+
+.glassHeader {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 1rem 4rem;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  color: var(--text-primary);
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--text-primary);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-cyan);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav a:hover::after, .nav a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.socials {
+  position: fixed;
+  bottom: 2rem;
+  left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 50;
+}
+
+.socials a {
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.socials a:hover {
+  color: var(--accent-cyan);
+  border-color: var(--glass-border);
+  background: var(--glass-bg);
+  transform: translateY(-2px);
+}
+
+.scrollIndicator {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  z-index: 50;
+}
+
+.mouse {
+  width: 24px;
+  height: 36px;
+  border: 2px solid var(--text-secondary);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.wheel {
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-cyan);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+  .glassHeader {
+    padding: 0.75rem 1.5rem;
+  }
+  .nav {
+    display: none; /* Hide on mobile for now, can implement mobile menu later */
+  }
+  .socials {
+    left: 1.5rem;
+    bottom: 1.5rem;
+    flex-direction: row;
+  }
+  .scrollIndicator {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
