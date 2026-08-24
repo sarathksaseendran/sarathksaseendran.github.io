@@ -1,14 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --bg-color: #030712; /* Very dark navy / black */
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --accent-cyan: #06b6d4;
-  --accent-teal: #14b8a6;
-  --accent-blue: #3b82f6;
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  /* LIGHT MODE */
+  --primary-color: #2563EB;
+  --primary-light: #EFF6FF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --bg-color: #F1F5F9;
+  --card-bg: #FFFFFF;
+  --success-color: #10B981;
+  --border-color: #E2E8F0;
+
+  /* Map old variable to new primary color */
+  --accent-color: var(--primary-color);
+}
+
+[data-theme="dark"] {
+  /* DARK MODE */
+  --primary-color: #3B82F6;
+  --primary-light: #1E293B;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --bg-color: #0B1220;
+  --card-bg: #111827;
+  --success-color: #22C55E;
+  --border-color: #1E293B;
+  
+  --accent-color: var(--primary-color);
 }
 
 * {
@@ -17,71 +35,45 @@
   padding: 0;
 }
 
-html, body, #root {
+html, body {
   width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
-  overflow: hidden; /* Canvas and ScrollControls manage scrolling */
-  overscroll-behavior: none;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
 
 button {
   font-family: 'Inter', sans-serif;
+  cursor: pointer;
 }
 
-/* Custom Scrollbar for non-Canvas elements if needed */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg-color);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--glass-border);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--text-secondary);
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-/* Glassmorphism Utilities */
-.glass-panel {
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
+section {
+  padding: 90px 0;
 }
 
-/* Utility to ensure UI sits above canvas without pointer events blocking it globally */
-#ui-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none; /* Let clicks pass through to canvas by default */
-  z-index: 10;
-}
-
-/* Re-enable pointer events for specific UI interactive elements */
-.pointer-events-auto {
-  pointer-events: auto;
+@media (min-width: 768px) {
+  section {
+    padding: 120px 0;
+  }
 }

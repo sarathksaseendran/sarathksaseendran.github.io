@@ -115,12 +115,20 @@ export const experiences: Experience[] = [
   },
   {
     id: "e6",
-    company: "Infinite Open Source Solutions & Sesame Tech",
-    role: "Software & Support Engineer",
-    period: "2010 - 2016",
+    company: "Infinite Open Source Solutions",
+    role: "Software Engineer",
+    period: "2013 - 2016",
     description: [
-      "Started career in software training and onsite support",
       "Progressed to PHP backend API development"
+    ]
+  },
+  {
+    id: "e7",
+    company: "Sesame Technologies & Software Solutions",
+    role: "Support Engineer",
+    period: "2010 - 2013",
+    description: [
+      "Started career in software training and onsite support"
     ]
   }
 ];

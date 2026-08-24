@@ -1,24 +1,23 @@
-# Sarath K - 3D Portfolio
+# Sarath K - Professional Portfolio
 
-A highly polished, interactive 3D digital experience portfolio built for Sarath K, a Senior Mobile Developer with 10+ years of experience. The website features a fully 3D environment rendered with Three.js, synchronized to scroll events for a continuous, immersive experience.
+A highly polished, minimalist, and high-performance digital portfolio built for Sarath K, a Senior Software Engineer specializing in Mobile, Web, and AI/LLM technologies.
 
 ## 🌟 Features
 
-- **3D Interactive Environment:** A central glowing "mobile development core" that reacts to mouse movements and scrolls.
-- **Orbital Tech Stack:** An impressive 3D orbital system representing the technology stack.
-- **Scroll-Driven Animation:** The camera traverses through the 3D space seamlessly as the user scrolls, transitioning between 5 major scenes.
-- **Glassmorphism UI:** Clean, futuristic HTML overlays layered on top of the 3D canvas, completely synchronized.
-- **Performance Optimized:** Uses device pixel ratio scaling, limited shadow mapping, and efficient mesh instancing to ensure smooth 60fps performance across desktop and mobile.
-- **Data-Driven Architecture:** Project details, experience timelines, and tech stacks are centralized in `src/data/portfolio.ts` for easy updates.
+- **Clean & Minimalist Design:** A professional 2D layout prioritizing readability, structure, and visual hierarchy.
+- **Responsive Architecture:** Fully responsive across all devices with a mobile-optimized sticky navigation menu.
+- **High Performance:** Extremely lightweight React architecture without heavy dependencies. Fast load times and tiny bundle size.
+- **Dynamic Data Source:** Centralized data structure (`src/data/portfolio.ts`) makes updating experiences, projects, and skills effortless without touching component logic.
+- **Visual Flourishes:** Integrated standard SVG icons via `react-icons` for technical skills and footer social links, plus a sleek generated 3D Chibi avatar.
+- **Dark & Light Mode Support:** Fully integrated dark and light mode themes with a manual toggle and automatic system preference detection. Built using CSS variables and React state.
 
 ## 🛠️ Technology Stack
 
 - **Core:** React, TypeScript, Vite
-- **3D Graphics:** Three.js, @react-three/fiber, @react-three/drei
-- **Post-Processing:** @react-three/postprocessing (Bloom effects)
-- **Animations:** Framer Motion (for UI overlays and micro-interactions)
-- **State Management:** Zustand (for scroll synchronization)
-- **Styling:** CSS Modules with custom variables
+- **Styling:** CSS Modules with clean global utility variables
+- **Icons:** `react-icons`
+- **Typography:** Google Fonts (Inter)
+- **Deployment:** GitHub Actions & GitHub Pages
 
 ## 🚀 Getting Started
 
@@ -48,19 +47,23 @@ A highly polished, interactive 3D digital experience portfolio built for Sarath 
 
 ## 📝 Customizing Content
 
-All user-facing text, projects, and experiences can be updated without modifying the 3D scene or component structure.
+Your portfolio's text and timeline content is fully decoupled from the UI code. 
 
-Simply edit the file at:
-`src/data/portfolio.ts`
+**To update your Experiences, Projects, or Skills:**
+Simply edit the data objects inside `src/data/portfolio.ts`. The UI will automatically map and render your updates.
 
-If you need to change the global color scheme, update the CSS variables inside `src/styles/globals.css`.
+**To update your Resume/Avatar:**
+- Resume: Replace `src/assets/resume.pdf` with your new PDF.
+- Avatar: Replace `src/assets/chibi_avatar.jpg` with a new image.
+
+If you need to change the global color scheme, typography, or spacing, update the CSS variables inside `src/styles/globals.css`.
 
 ## 🏗️ Project Architecture & Deployment
 
-This project uses a layered architecture to achieve a high-performance 3D web experience:
-- **3D Canvas Layer (`src/components/3d/Scene.tsx`)**: Handles WebGL rendering, lighting, and camera animations. It leverages `@react-three/fiber` for React-based Three.js components and `@react-three/drei`'s `ScrollControls` to tie camera movement to the user's scroll.
-- **HTML UI Layer (`src/components/3d/HTMLContent.tsx`)**: Standard React components overlaid on top of the 3D canvas. These sections (Hero, Experience, Projects) sync perfectly with the 3D scroll and use Framer Motion for micro-interactions (like 3D tilt effects on project cards).
-- **Global Store (`src/store/useStore.ts`)**: A lightweight Zustand store that tracks the active scroll section to update the fixed navigation bar seamlessly.
+This project uses a standard, high-performance React component architecture:
+- **`src/data/`**: Centralized content management.
+- **`src/sections/`**: Contains all individual page sections (Header, Hero, About, Experience, etc.) and their scoped CSS modules.
+- **`src/styles/`**: Contains global resets, spacing utilities, and CSS variables for theming.
 
 ### 📦 GitHub Pages Automation
 
@@ -71,7 +74,7 @@ This repository includes a fully automated **GitHub Actions** workflow (`.github
 1. Push your code to GitHub:
    ```bash
    git add .
-   git commit -m "Initial 3D portfolio commit"
+   git commit -m "Update portfolio architecture to minimalist 2D layout"
    git branch -M main
    git push -u origin main
    ```
@@ -84,4 +87,4 @@ This repository includes a fully automated **GitHub Actions** workflow (`.github
 3. That's it! GitHub will now automatically run the workflow and publish your site to `https://sarathksaseendran.github.io`.
 
 ---
-*Designed and built to showcase production-grade mobile application architecture and modern web experiences.*
+*Designed and built to showcase production-grade software architecture, cross-platform mobile expertise, and modern AI integrations.*
